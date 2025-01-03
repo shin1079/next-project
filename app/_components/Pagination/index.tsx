@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 type Props = {
   totalCount: number;
   current?: number;
-  basePath: string;
+  basePath?: string;
 };
 
 export default function Pagenation({ totalCount, current = 1, basePath = "/news", }: Props) {
