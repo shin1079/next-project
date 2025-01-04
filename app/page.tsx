@@ -21,7 +21,15 @@ export default async function Home() {
             私たちは市場をリードしているグローバルテックカンパニーです。
           </p>
         </div>
-        <Image className={styles.bgimg} src="/img-mv.jpg" alt="" width={4000} height={1200} />
+        <Image
+          className={styles.bgimg}
+          src="/img-mv.jpg"
+          alt=""
+          width={4000}
+          height={1200}
+          priority
+          sizes="(max-width: 640px) 100vw, 50vw"
+        />
       </section>
 
       <section className={styles.news}>
